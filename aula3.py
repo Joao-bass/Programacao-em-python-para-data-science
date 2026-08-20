@@ -1,0 +1,56 @@
+
+
+
+# # # def calcular_media(m1, m2, m3):
+# # #      return (m1 + m2 + m3) /3
+
+# # # valor1 = float(input('Digite a primeira nota: '))
+# # # valor2 = float(input('Digite a seunda nota: '))
+# # # valor3 = float(input('Digite a terceira nota: '))
+
+# # # valor_final = calcular_media(valor1 ,valor2 , valor3)  
+# # # print('Sua media é: ', valor_final)  
+
+
+
+
+# # # def calcular_imc(peso, altura):
+# # #     return (peso / altura)**2
+
+# # # peso = float(input('Informe seu peso: '))
+# # # altura = float(input('Informe sua altura: '))
+# # # valor_imc = calcular_imc(peso, altura)
+# # # print('Seu imc é: ', valor_imc)
+
+
+
+
+
+
+
+# def jogo_adivinha():
+#     n = 20
+#     i = int(input('Escolha um numero: '))
+
+#     if n == i:
+#         print('Acertou')
+#     else:
+#         print('Errou')
+
+
+# # import random
+
+
+# # def jogo_2():
+# #     while True:
+# #         n = random.randint(0, 21)
+# #         op = int(input('>>>'))  
+        
+
+# #         if n == op:
+# #             print('Bingo>>>')
+# #         else:
+# #             print('Tente novamente: ')
+
+        
+# #         print(jogo_2)
