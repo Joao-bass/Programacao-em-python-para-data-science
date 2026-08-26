@@ -16,18 +16,34 @@ def criar_notas():
 
 
 def analise():
-    listas_notas = criar_notas()
-    if listas_notas == (0,3):
+        l_notas = criar_notas()
 
-        listas_notas = statistics.mean(0,3)
-        listas_notas = statistics.mode(0,3)
-        listas_notas = statistics.median(0,3)
-        listas_notas = statistics.pstdev(0,3)
-        listas_notas = statistics.pvariance(0,3)
-        amplitude = max(listas_notas) - min(listas_notas)
-        print(listas_notas,amplitude)
-    else:
-        print('')
+        todas_notas = []
+
+        for n in l_notas:
+              for nota in n:
+                    todas_notas.append(nota)  
+        media = statistics.mean(todas_notas)
+        moda = statistics.mode(todas_notas)
+        mediana = statistics.median(todas_notas)
+        desvio = statistics.pstdev(todas_notas)
+        variancia = statistics.pvariance(todas_notas)
+        amplitude = max(todas_notas) - min(todas_notas)
+        menor = min(todas_notas)
+        maior = max(todas_notas)
+        print(f'''
+                media = {media}
+                moda = {moda}
+                mediana = {mediana}
+                desvio padrao = {desvio}
+                variancia = {variancia}
+                amplitude = {amplitude}
+                menor nota é: {menor}
+                maior nota é: {maior}
+
+                    
+                ''')
+       
 
 
 
