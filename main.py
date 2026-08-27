@@ -1,0 +1,26 @@
+import pandas as pd
+
+i = pd.read_csv('dados.csv')
+df = pd.DataFrame(i)
+print(df)
+print('-'* 10)
+
+media = df['Idade'].mean()
+print('Media = ',media)
+print('-'* 10)
+
+mediana = df['Idade'].median()
+print('Mediana = ',mediana)
+print('-'* 10)
+
+p = df[df['Nome'] == 'Maria']
+print(p)
+
+print('-'* 10)
+info_ = df.info()
+print(info_)
+print('-'* 10)
+
+
+agregacao = df.groupby('Cidade')['Idade'].mean()
+print(agregacao)
