@@ -1,0 +1,68 @@
+import numpy as np
+
+
+
+# 1. Crie um array de 20 elementos.
+on = np.arange(21)
+print(on)
+primeiro = on[:5]
+ultimos = on[15:]
+posicao = on[5:11]
+print("Array original:", on)
+print('Primeiro numeros',primeiro)
+print('ultimos',ultimos)
+print('poseicao de 5 a 10',posicao)
+
+
+
+# Desafio 2:
+# 1. Crie duas matrizes 3x3.
+# 2. Calcule o produto.
+ar = np.arange(9).reshape((3,3))
+calculo = sum(ar)
+print(ar,'\n',calculo)
+
+
+# Desafio 3:
+# Criação de Arrays:
+# Crie um array de 1 a 10.
+# Crie uma matriz 3x3 com valores aleatórios entre 0 e 1.
+ar = np.arange(10)
+print(ar)
+ma = np.array(np.random.randint(0, 2,(3,3)))
+print(ma)
+
+
+# Desafio 4:
+# Calcule a soma dos elementos do array.
+# Encontre o valor máximo e mínimo do array.
+
+ar1 = np.array([1, 2, 3])
+ar2 = np.array([4, 5, 6])
+soma = ar1 + ar2
+ma = max(soma)
+min = min(soma)
+print('soma = ',soma,'maior = ',ma,'menor = ',min)
+
+# Desafio 5:
+# Calcule a média dos valores do array.
+# Calcule a mediana dos valores do array.
+
+dados = np.array([1, 2, 3, 4, 5])
+media = np.mean(dados)
+mediana = np.median(dados)
+print(dados)
+print('=' * 10)
+print('Media = ',media, '\n''Mediana = ',mediana)
+
+
+# Desafio 6:
+# Adicione o 10 a todos os elementos do array.
+# Reshape o array 1D para um array 2D (2x5).
+
+dados = np.array([1,2,3,4,5,6,7,8,9])
+print(dados)
+dados[:] = 10
+print(dados)
+
+dados = np.reshape
