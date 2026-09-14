@@ -36,7 +36,6 @@ print(ma)
 # Desafio 4:
 # Calcule a soma dos elementos do array.
 # Encontre o valor máximo e mínimo do array.
-
 ar1 = np.array([1, 2, 3])
 ar2 = np.array([4, 5, 6])
 soma = ar1 + ar2
@@ -44,10 +43,10 @@ ma = max(soma)
 min = min(soma)
 print('soma = ',soma,'maior = ',ma,'menor = ',min)
 
+
 # Desafio 5:
 # Calcule a média dos valores do array.
 # Calcule a mediana dos valores do array.
-
 dados = np.array([1, 2, 3, 4, 5])
 media = np.mean(dados)
 mediana = np.median(dados)
@@ -59,7 +58,6 @@ print('Media = ',media, '\n''Mediana = ',mediana)
 # Desafio 6:
 # Adicione o 10 a todos os elementos do array.
 # Reshape o array 1D para um array 2D (2x5).
-
 dados = np.array([1,2,3,4,5,6,7,8,9])
 print(dados)
 dados[:] = 10
